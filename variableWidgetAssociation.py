@@ -41,11 +41,11 @@ def cb_2(*args):
 def cb_3(*args):
     print ("Text field was updated to [{}]".format(Values['inp'].get()))
 
-Values['BoxSync'] = IntVar()
+Values['BoxSync'] = BooleanVar()
 Values['BoxSync'].trace("w", cb_1)
 ck1 = Checkbutton(root, text = "Box Sync", font=("Helvetica Neue", 14), variable = Values['BoxSync'], bg = bgColor).grid(row = 1, column = 2, sticky = 'w')
 
-Values['CrashPlan'] = IntVar()
+Values['CrashPlan'] = BooleanVar()
 Values['CrashPlan'].trace("w", cb_2)
 ck2 = Checkbutton(root, text = "CrashPlan", font=("Helvetica Neue", 14), variable = Values['CrashPlan'], bg = bgColor).grid(row = 1, column = 3, columnspan = 2, padx = (0, 10), sticky = 'w')
 

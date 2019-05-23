@@ -46,7 +46,9 @@ def ButtonQuitHandler(statusBar, root):
 ############################################################################
 root = Tk()
 root.title("Status bar test window")
-sb = StatusBar(root, 50)
+
+
+sb = StatusBar(root, 20)
 
 btnTest = Button(root, text="Test", command=lambda:ButtonTestHandler(sb))
 btnTest.pack(side=LEFT)
